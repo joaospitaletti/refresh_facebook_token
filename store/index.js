@@ -56,18 +56,18 @@ export const actions = {
         }
       );
 
-      console.log('Login do Ale '+Login)
+      console.log('Login do Ale '+ JSON.stringify(Login))
 
-      const ME_ale = await this.$axios.$get(
-        "/api/me",
-        {
-          headers: {
-            'Authorization': 'Bearer ' + Login.token
-          }
-        }
-      );
+      // const ME_ale = await this.$axios.$get(
+      //   "/api/me",
+      //   {
+      //     headers: {
+      //       'Authorization': 'Bearer ' + Login.token
+      //     }
+      //   }
+      // );
 
-      console.log(ME_ale)
+      // console.log(ME_ale)
 
       console.log("Retorno do login na api do Ale " + JSON.stringify(Login));
 
