@@ -62,7 +62,7 @@ export const actions = {
         "/api/users/me",
         {
           headers: {
-            'Authorization': 'Bearer ' + validToken()
+            'Authorization': 'Bearer ' + Login.token
           }
         }
       );
@@ -73,7 +73,7 @@ export const actions = {
 
       let renewToken = await this.$axios.$get("/api/auth/renew", {
         headers: { token: payload.token,
-            'Authorization': 'Bearer ' + validToken()
+            'Authorization': 'Bearer ' + Login.token
           }
       });
 
