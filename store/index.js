@@ -56,10 +56,10 @@ export const actions = {
         }
       );
 
-      console.log('vai tentar autentica na api do ale')
+      console.log('Login do Ale '+Login)
 
       const ME_ale = await this.$axios.$get(
-        "/api/users/me",
+        "/api/me",
         {
           headers: {
             'Authorization': 'Bearer ' + Login.token
