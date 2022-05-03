@@ -35,7 +35,7 @@
                   <div>
                     <div class="card-header bg-transparent pb-5 text-center">
                       <h2>Token renovado com sucesso</h2>
-                      <small>Parabéns, Token renovado com sucesso</small>
+                      <small>Parabéns, Token renovado com sucesso.<br>Agora você pode abrir o App Deubom novamente.</small>
                     </div>
                    
                   </div>
