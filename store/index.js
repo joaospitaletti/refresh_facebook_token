@@ -69,7 +69,7 @@ export const actions = {
 
       // console.log(ME_ale)
 
-      console.log("Retorno do login na api do Ale " + JSON.stringify(Login));
+      console.log("Retorno do login na api do Ale " + JSON.stringify(JSON.stringify(Login)));
 
       let renewToken = await this.$axios.$get("/api/auth/renew", {
         headers: { token: payload.token,
