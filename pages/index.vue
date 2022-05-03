@@ -29,7 +29,20 @@
 
 
 
-              <div class="w-100">
+              
+              <div v-if="$store.state.listPages.length > 0" class="w-100">
+                <div class="card bg-secondary border-0 mb-0">
+                  <div>
+                    <div class="card-header bg-transparent pb-5 text-center">
+                      <h2>Token renovado com sucesso</h2>
+                      <small>Parabéns, Token renovado com sucesso</small>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+
+              <div v-else class="w-100">
                 <div class="custom-carousel-item card bg-secondary border-0 mb-0">
                   <div>
                     <div class="card-header bg-transparent pb-3 text-center">
@@ -44,17 +57,6 @@
                         <a href="https://www.facebook.com/dialog/oauth/?client_id=921406831677703&response_type=token&redirect_uri=https://app.deubom.com.br/&state=123&scope=public_profile,email,instagram_basic,instagram_manage_insights,business_management,pages_read_engagement,pages_show_list" class="d-flex justify-content-center m-auto align-items-center font-weight-bold fb-button" ><img width="20px" height="20px" src="../static/img/brand/fb.png" class="fab fa-facebook mr-2"/>Login com Facebook</a>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div v-if="$store.state.listPages.length > 0" class="w-100">
-                <div class="card bg-secondary border-0 mb-0">
-                  <div>
-                    <div class="card-header bg-transparent pb-5 text-center">
-                      <h2>Token renovado com sucesso</h2>
-                      <small>Parabéns, Token renovado com sucesso</small>
-                    </div>
-                   
                   </div>
                 </div>
               </div>
