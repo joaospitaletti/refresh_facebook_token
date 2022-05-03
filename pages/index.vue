@@ -25,12 +25,12 @@
       <div class="container mt--8 pb-5">
         <div class="row justify-content-center">
           <div v-if="show === true" class="col-lg-5 col-md-7 px-0">
-            <VueSlickCarousel :initialSlide="slide" :infinite="false" :arrows="false" :dots="true">
+            <!-- <VueSlickCarousel :initialSlide="slide" :infinite="false" :arrows="false" :dots="true"> -->
 
 
 
               <div class="w-100">
-                <div class="card bg-secondary border-0 mb-0">
+                <div class="custom-carousel-item card bg-secondary border-0 mb-0">
                   <div>
                     <div class="card-header bg-transparent pb-3 text-center">
                       <img class="m-auto py-3" width="220px" src="img/icons/superwoman.svg"/>
@@ -59,7 +59,7 @@
                 </div>
               </div>
               
-            </VueSlickCarousel>
+            <!-- </VueSlickCarousel> -->
           </div>
         </div>
       </div>
