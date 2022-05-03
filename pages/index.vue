@@ -51,32 +51,6 @@
                 <div class="custom-carousel-item card bg-secondary border-0 mb-0">
                   <div>
                     <div class="card-header bg-transparent pb-5 text-center">
-                      <h2>Selecione a página do Facebook</h2>
-                      <small>Essa página tem que estar associada ao seu perfil Business do Instagram</small>
-                    </div>
-                    <div>
-                      <div class="card-body">
-                        <div class="page-select">
-                          <div class="text-left d-flex justify-content-start align-items-center w-100 page-box"
-                               v-for="item in $store.state.listPages"
-                               :key="item.id"
-                               @click="listInstagram(item.id, item.access_token)"
-                          >
-                            <div class="picture" :style="'background-image:' + 'url(' + item.picture.data.url + ')'"></div>
-                            <h4 class="mb-0 ml-2">{{ item.name }}</h4>
-                          </div>
-                        </div>
-<!--                        <base-button @click="slide = 3" type="primary" outline class="mb-4 mt-6">Voltar</base-button>-->
-                        <base-button @click="$router.push('/pages/user')" type="primary" outline class="mb-4 mt-6">Voltar</base-button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div v-else>
-                <div class="custom-carousel-item card bg-secondary border-0 mb-0">
-                  <div>
-                    <div class="card-header bg-transparent pb-5 text-center">
                       <h2>Token renovado com sucesso</h2>
                       <small>Parabéns, Token renovado com sucesso</small>
                     </div>
