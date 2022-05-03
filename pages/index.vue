@@ -127,8 +127,8 @@ export default {
   },
   async mounted() {
     initFbsdk();
-    console.log('query de retorno', this.$route.query)
-    console.log('hash de retorno', this.$route.hash)
+    // console.log('query de retorno', this.$route.query)
+    // console.log('hash de retorno', this.$route.hash)
     this.$store.commit('SET_LOADING_DETAILS', true)
 
     if (this.$route.hash) {
@@ -137,10 +137,10 @@ export default {
       let result = hash.split('&').reduce(function (res, item) {
         let parts = item.split('=');
         res[parts[0]] = parts[1];
-        console.log('res hash', res)
+        // console.log('res hash', res)
         return res;
       }, {});
-      console.log('result hash', result)
+      // console.log('result hash', result)
       if (result.access_token) {
         await this.$store.dispatch('Login', {token: result.access_token})
         this.slide = 4
@@ -148,7 +148,7 @@ export default {
       }
     } else {
       this.show = true
-      console.log(this.show)
+      // console.log(this.show)
     }
   },
   async beforeCreate(){

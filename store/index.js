@@ -56,6 +56,8 @@ export const actions = {
         }
       );
 
+      console.log('vai tentar autentica na api do ale')
+
       const ME_ale = await this.$axios.$get(
         "/api/users/me",
         {
