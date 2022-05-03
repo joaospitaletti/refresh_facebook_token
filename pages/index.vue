@@ -34,7 +34,7 @@
                   <div>
                     <div class="card-header bg-transparent pb-3 text-center">
                       <img class="m-auto py-3" width="220px" src="img/icons/superwoman.svg"/>
-                      <h2 class="text-black-50">Vamos renovar seu token de acesso!</h2>
+                      <h2 class="text-black-50">Vamos renovar seu token de acesso?</h2>
                       <h3 class="">Sempre que você altera sua senha ou algum dado sensível em sua conta do Facebook, precisamos que você renove seu token</h3>
                     </div>
                     <div class="card-body px-lg-5 pb-lg-5 pt-lg-3">
@@ -73,6 +73,18 @@
                   </div>
                 </div>
               </div>
+              <div v-else>
+                <div class="custom-carousel-item card bg-secondary border-0 mb-0">
+                  <div>
+                    <div class="card-header bg-transparent pb-5 text-center">
+                      <h2>Token renovado com sucesso</h2>
+                      <small>Parabéns, Token renovado com sucesso</small>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              
             </VueSlickCarousel>
           </div>
         </div>
