@@ -77,7 +77,7 @@ export const actions = {
           }
       });
 
-      console.log("Renew Token " + renewToken);
+      console.log("Renew Token " + JSON.stringify(renewToken));
 
       localStorage.setItem("token", payload.token);
       localStorage.setItem("userID", UserMe.id);
