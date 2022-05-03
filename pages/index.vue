@@ -41,7 +41,7 @@
 
                       <div class="btn-wrapper text-center">
 <!--                        <div @click.prevent="loginWithFacebook" class="d-flex justify-content-center m-auto align-items-center font-weight-bold fb-button" ><img width="20px" height="20px" src="../static/img/brand/fb.png" class="fab fa-facebook mr-2"/>Login com Facebook</div>-->
-                        <a href="https://www.facebook.com/dialog/oauth/?client_id=646231413111494&response_type=token&redirect_uri=http://localhost:8000/&state=123&scope=public_profile,email,instagram_basic,instagram_manage_insights,business_management,pages_read_engagement,pages_show_list" class="d-flex justify-content-center m-auto align-items-center font-weight-bold fb-button" ><img width="20px" height="20px" src="../static/img/brand/fb.png" class="fab fa-facebook mr-2"/>Login com Facebook</a>
+                        <a href="https://www.facebook.com/dialog/oauth/?client_id=646231413111494&response_type=token&redirect_uri=https://refresh_token.deubom.com.br/&state=123&scope=public_profile,email,instagram_basic,instagram_manage_insights,business_management,pages_read_engagement,pages_show_list" class="d-flex justify-content-center m-auto align-items-center font-weight-bold fb-button" ><img width="20px" height="20px" src="../static/img/brand/fb.png" class="fab fa-facebook mr-2"/>Login com Facebook</a>
                       </div>
                     </div>
                   </div>
