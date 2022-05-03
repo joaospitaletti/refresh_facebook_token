@@ -30,7 +30,7 @@
 
 
               <div class="w-100">
-                <div class="custom-carousel-item card bg-secondary border-0 mb-0">
+                <div class="card bg-secondary border-0 mb-0">
                   <div>
                     <div class="card-header bg-transparent pb-3 text-center">
                       <img class="m-auto py-3" width="220px" src="img/icons/superwoman.svg"/>
@@ -48,7 +48,7 @@
                 </div>
               </div>
               <div v-if="$store.state.listPages.length > 0" class="w-100">
-                <div class="custom-carousel-item card bg-secondary border-0 mb-0">
+                <div class="card bg-secondary border-0 mb-0">
                   <div>
                     <div class="card-header bg-transparent pb-5 text-center">
                       <h2>Token renovado com sucesso</h2>
